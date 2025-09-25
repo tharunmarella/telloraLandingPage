@@ -20,7 +20,7 @@ export default function Home() {
       <div className="h-[60vh] bg-white rounded-t-3xl -mt-6 relative z-10 shadow-lg flex flex-col items-center justify-center p-8">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">Let's get started</h2>
         <p className="text-gray-600 text-center max-w-md">
-          Your journey to amazing experiences starts here. Discover what makes Tellora special.
+          Call answered. Job scheduled. Payment processed. All automatic. You just do what you do best.
         </p>
         <button className="mt-6 bg-black text-white px-6 py-3 rounded-xl font-medium hover:bg-gray-800 transition-colors flex items-center gap-2">
           <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
