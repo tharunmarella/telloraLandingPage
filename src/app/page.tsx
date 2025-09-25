@@ -2,6 +2,11 @@
 
 import { track } from '@vercel/analytics'
 
+// Declare gtag as a global function for Google Analytics
+declare global {
+  function gtag(...args: any[]): void
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -35,7 +40,13 @@ export default function Home() {
           href="https://apps.apple.com/us/app/tellora-field-service-software/id6751152912"
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => track('app_store_download_click')}
+          onClick={() => {
+            track('app_store_download_click')
+            gtag('event', 'app_store_download_click', {
+              event_category: 'engagement',
+              event_label: 'app_store_download'
+            })
+          }}
           className="mt-6 bg-black text-white px-6 py-3 rounded-xl font-medium hover:bg-gray-800 transition-colors flex items-center gap-2 no-underline"
         >
           <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
