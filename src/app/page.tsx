@@ -40,7 +40,7 @@ export default function Home() {
         </a>
 
         {/* Watermark */}
-        <div className="mt-8 text-gray-400 text-xs opacity-50 font-normal select-none">
+        <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-gray-400 text-xs opacity-50 font-normal select-none">
           Tellora, Inc.
         </div>
       </div>
