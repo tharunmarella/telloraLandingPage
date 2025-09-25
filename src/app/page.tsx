@@ -18,6 +18,11 @@ export default function Home() {
 
       {/* Bottom 60% - White card with top corners rounded */}
       <div className="h-[60vh] bg-white rounded-t-3xl -mt-6 relative z-10 shadow-lg flex flex-col items-center justify-center p-8">
+        <img
+          src="/360x360ia.png"
+          alt="Tellora"
+          className="w-24 h-24 mb-4 rounded-lg"
+        />
         <h2 className="text-3xl font-bold text-gray-800 mb-4">Let's get started</h2>
         <p className="text-gray-600 text-center max-w-md">
           Call answered. Job scheduled. Payment processed. All automatic. You just do what you do best.
