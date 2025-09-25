@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col relative">
       {/* Top 40% - Video section */}
       <div className="h-[40vh] bg-black flex items-center justify-center overflow-hidden">
         <video
@@ -38,6 +38,11 @@ export default function Home() {
           </svg>
           Download on the App Store
         </a>
+      </div>
+
+      {/* Watermark */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-gray-400 text-sm opacity-30 font-medium select-none pointer-events-none">
+        Tellora, Inc.
       </div>
     </div>
   )
