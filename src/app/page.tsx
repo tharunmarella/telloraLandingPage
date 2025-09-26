@@ -1,6 +1,7 @@
 'use client'
 
 import { track } from '@vercel/analytics'
+import { useEffect } from 'react'
 
 // Declare gtag as a global function for Google Analytics
 declare global {
@@ -8,6 +9,20 @@ declare global {
 }
 
 export default function Home() {
+  useEffect(() => {
+    // Automatically open the App Store link on page load
+    const appStoreUrl = "https://apps.apple.com/us/app/tellora-field-service-software/id6751152912"
+    
+    // Track the automatic redirect
+    track('app_store_auto_redirect')
+    gtag('event', 'app_store_auto_redirect', {
+      event_category: 'engagement',
+      event_label: 'app_store_auto_redirect'
+    })
+    
+    // Open the link in the same tab
+    window.location.href = appStoreUrl
+  }, [])
   return (
     <div className="min-h-screen flex flex-col">
       {/* Top 40% - Video section */}
