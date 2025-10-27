@@ -11,7 +11,7 @@ declare global {
 export default function Home() {
   useEffect(() => {
     // Automatically open the App Store link on page load
-    const appStoreUrl = "https://apps.apple.com/us/app/tellora-field-service-software/id6751152912"
+    const appStoreUrl = "https://apps.apple.com/us/app/beam-phone/id6751152912?ppid=4d598603-3271-4fa1-a9f8-c5eb12d82d10"
     
     // Track the automatic redirect
     track('app_store_auto_redirect')
@@ -44,15 +44,15 @@ export default function Home() {
       <div className="h-[60vh] bg-white rounded-t-3xl -mt-6 relative z-10 shadow-lg flex flex-col items-center justify-center p-8">
         <img
           src="/360x360ia.png"
-          alt="Tellora"
+          alt="Beam Phone"
           className="w-24 h-24 mb-4 rounded-lg"
         />
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">Let's get started</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">Let Maya Answer & Collect Pay</h2>
         <p className="text-gray-600 text-center max-w-md">
-          Call answered. Job scheduled. Payment processed. All automatic. You just do what you do best.
+          Never miss another opportunity. Maya answers when you're busy, qualifies leads, and you get paid in 60 seconds. The only business phone built for consultants and freelancers.
         </p>
         <a
-          href="https://apps.apple.com/us/app/tellora-field-service-software/id6751152912"
+          href="https://apps.apple.com/us/app/beam-phone/id6751152912?ppid=4d598603-3271-4fa1-a9f8-c5eb12d82d10"
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => {
