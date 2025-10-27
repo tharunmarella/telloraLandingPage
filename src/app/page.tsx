@@ -43,7 +43,7 @@ export default function Home() {
       {/* Bottom 60% - White card with top corners rounded */}
       <div className="h-[60vh] bg-white rounded-t-3xl -mt-6 relative z-10 shadow-lg flex flex-col items-center justify-center p-8">
         <img
-          src="/360x360ia.png"
+          src="/beam-phone-icon.png"
           alt="Beam Phone"
           className="w-24 h-24 mb-4 rounded-lg"
         />
